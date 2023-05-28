@@ -1,1 +1,189 @@
+''' function '''
+
+def sai():
+    print('sathish')
+
+sai()
+
+
+def sai(name):     #''' parameter'''
+    print('hello',name)
+
+sai("sathish")
+
+
+def sai(name1,name2,name3='not name'):
+    print(name1,name2,name3)
+
+sai('sathish','kumar','sam')
+sai('sathish','kumar')
+
+
+def sai (m):
+    return m*5
+
+print(sai(5))
+
+
+# passing data type
+
+def sai(name):
+    print(name)
+
+
+m=[1,2,3,4,5,6]
+sai(m)
+
+m1=('a','b','c','d')
+sai(m1)
+
+m2={1,2,3,4,5}
+sai(m2)
+
+m3={1:'saa',2:'ssss'}
+sai(m3)
+
+
+def sai(name):
+    for i in range (0,(len(name))):
+        print(name[i])
+
+
+u=["sathish","kumar","saran"]
+sai(u)
+
+
+def sai (name):
+    for i in name:
+        print(i.upper())
+
+p=['sathish','sam','saran']
+sai(p)
+
+# return data type
+
+
+def sai():
+    D={1:'aaa',2:'bbbb',3:'cccc'}
+    return D
+
+print(sai())
+
+
+def sai():
+    L=['aaaa','bbbb','cccc','ddd']
+    return L
+
+print(sai())
+
+def sai():
+    T=('aaa','bbbb','ccc')
+    return T
+
+print(sai())
+
+def sai():
+    S={1,2,3,4,5}
+    return S
+
+print(sai())
+
+
+# recursion
+def sai(num):
+    if num ==0:
+        return 1
+    return num *sai(num-1)
+print(sai(4))
+
+
+def sai(num):
+    if num==0:
+        return 1
+    else:
+        return num*sai(num-1)
+
+print(sai(6))
+print(6*5*4*3*2)
+
+
+def sai(*rrr):
+    print(list((rrr)))
+
+sai(1,2,3,4,5)
+
+def sai(*rrr):
+    for i in rrr:
+        print(i)
+
+sai('sathish','saran','sanrhi')
+
+
+
+
+def my_function(*kids):
+  print("The youngest child is " + kids[2])
+
+my_function("Emil", "Tobias", "Linus")
+
+
+def sathish(*ere):
+    print(ere[1])
+
+sathish('aaa','bbbb','cccc')
+
+
+
+def sai(**kkk):
+    for i,j in kkk.items():
+        print(i,j)
+sai(name='= sathsih',age=25)
+
+
+def sai(**yyy):
+    for i,j in yyy.items():
+        print(j)
+sai(name='sathis',age=25)
+
+
+def sai(*aaa,**bbb):
+    print(aaa)
+    print(bbb)
+
+sai('aaaa','bbbb','cccc',name='sathish',age=25)
+
+
+def sai(*aaa,**bbb):
+    for i in aaa:
+        print(i)
+
+    for i,j in bbb.items():
+        print(i,j)
+
+sai('sathish','sam',name='sathish',name1='kumar')
+
+
+
+def sai(num=int,num1=int):
+    t=num+num1
+    print(f'number 1 is {num} and number is {num1} total={t}')
+
+sai(10,10)
+
+
+def myFun(**kwargs):
+    for key, value in kwargs.items():
+        print("%s == %s" % (key, value))
+
+
+# Driver code
+myFun(first='Geeks', mid='for', last='Geeks')
+
+
+
+def sai(**kkk):
+    for i,j in kkk.items():
+        print('%s == %s' % (i,j))
+
+sai(name='sathish',name2='kumar')
 
