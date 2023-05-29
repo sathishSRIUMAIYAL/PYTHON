@@ -184,6 +184,30 @@ myFun(first='Geeks', mid='for', last='Geeks')
 def sai(**kkk):
     for i,j in kkk.items():
         print('%s == %s' % (i,j))
+        
+       
 
 sai(name='sathish',name2='kumar')
 
+
+
+
+'''lambda function'''
+
+def sai(num):
+    return lambda a,b:a*b+num
+
+sam=sai(10)
+print(sam(2,4))
+
+x=lambda a,b,c:(a+b)*c
+
+print(x(1,2,3))
+
+
+
+def sathish(num):
+    return lambda a,b:(a+b)*num
+
+sam=sathish(5)
+print(sam(10,11))
