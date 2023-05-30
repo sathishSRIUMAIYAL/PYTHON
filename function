@@ -211,3 +211,19 @@ def sathish(num):
 
 sam=sathish(5)
 print(sam(10,11))
+
+
+list=[]
+for i in range(1,11):
+    list.append(i)
+
+print(list)
+
+
+def sai(num):
+    list=[]
+    for i in range(1,(num+1)):
+        list.append(i*2)
+    return list
+
+print(sai(10))
