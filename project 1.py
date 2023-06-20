@@ -79,10 +79,6 @@ if 'yes'==inp:
     else:
         print('enter the right value')
 
-
-
-
-
 elif 'no'==inp:
     print('ok we will meet next time')
 
