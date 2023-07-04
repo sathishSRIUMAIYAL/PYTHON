@@ -25,6 +25,15 @@ print(nam2.index('dev'))
 x=nam2.replace('sridevi','sai')
 print('hello',x)
 print(nam3.title())
+n1='sathish'
+n2='kumar'
+
+print(n1,n2)                                            #using , operator
+print(n1+n2)                                            #using + operator
+print('{} {}'.format('one','two'))                      #using formate operator
+print('this is {} and this is {}'.format(n1,n2))        #using formate  operator
+print('%s %s'% (n1,n2))                                 #using %(model) operator
+print("".join([n1,n2]))                                  #using joint operator
 print('********************** NUMBER TYPE *************')
 num=255
 num1=25.000
