@@ -66,6 +66,11 @@ L.remove('ram')
 print(L)
 L.pop(0)      #The pop() method like del deletes value at a particular index. But pop() method returns deleted value from the list.
 print(L)
+k=['a','b','c','d']
+k[1:3]=['oo','dd']
+k[1:2]=['ok','no']
+k=[1:3]=['mmmm]
+         
 
 L1=['sai','ani','chinna','dhina']
 L1.sort()
